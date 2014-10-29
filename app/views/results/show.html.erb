@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Response:</strong>
+  <%= @result.response %>
+</p>
+
+<p>
+  <strong>Response code:</strong>
+  <%= @result.response_code %>
+</p>
+
+<p>
+  <strong>Pass?</strong>
+  <%= @result.pass %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @result.reason %>
+</p>
+
+<p>
+  <strong>Datetime:</strong>
+  <%= @result.datetime %>
+</p>
+
+<p>
+  <strong>Test suite run:</strong>
+  <%= @result.test_suite_run_id %>
+</p>
+
+<p>
+  <strong>Test case:</strong>
+  <%= @result.test_case_id %>
+</p>
+
+<%= link_to 'Edit', edit_test_suite_result_path(@test_suite,@result) %> |
+<%= link_to 'Back', test_suite_results_path %>

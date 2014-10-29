@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @notification_rule.name %>
+</p>
+
+<p>
+  <strong>Script:</strong>
+  <%= @notification_rule.script %>
+</p>
+
+<p>
+  <strong>Args:</strong>
+  <%= @notification_rule.args %>
+</p>
+
+<%= link_to 'Edit', edit_test_suite_notification_rule_path(@test_suite,@notification_rule) %> |
+<%= link_to 'Back', test_suite_notification_rules_path(@test_suite,@notification_rule) %>

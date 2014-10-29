@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  endpoint: MyString
+  method: MyString
+  params: MyString
+  timeout: 1
+  test_suite_id: 1
+
+two:
+  endpoint: MyString
+  method: MyString
+  params: MyString
+  timeout: 1
+  test_suite_id: 1

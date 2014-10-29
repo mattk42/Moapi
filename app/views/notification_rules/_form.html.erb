@@ -1,0 +1,29 @@
+<%= form_for [@test_suite,@notification_rule] do |f| %>
+  <% if @notification_rule.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@notification_rule.errors.count, "error") %> prohibited this notification_rule from being saved:</h2>
+
+      <ul>
+      <% @notification_rule.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :script %><br>
+    <%= f.text_field :script %>
+  </div>
+  <div class="field">
+    <%= f.label :args %><br>
+    <%= f.text_field :args %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

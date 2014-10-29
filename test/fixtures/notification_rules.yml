@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  script: MyString
+  args: MyString
+  test_case_id: 1
+  test_suite_id: 1
+
+two:
+  name: MyString
+  script: MyString
+  args: MyString
+  test_case_id: 1
+  test_suite_id: 1

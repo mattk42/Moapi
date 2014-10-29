@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Oauth url:</strong>
+  <%= @test_suite.oauth_url %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @test_suite.client_id %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @test_suite.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @test_suite.password %>
+</p>
+
+<p>
+  <strong>Interval:</strong>
+  <%= @test_suite.interval %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @test_suite.name %>
+</p>
+
+<%= link_to 'Edit', edit_test_suite_path(@test_suite) %> |
+<%= link_to 'Test Cases', test_suite_test_cases_path(@test_suite) %> |
+<%= link_to 'Notification Rules', test_suite_notification_rules_path(@test_suite) %> |
+<%= link_to 'Back', test_suites_path %>

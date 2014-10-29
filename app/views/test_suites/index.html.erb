@@ -1,0 +1,28 @@
+<h1>All Test Suites</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Interval</th>
+      <th colspan="2">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @test_suites.each do |test_suite| %>
+      <tr>
+        <td><%= test_suite.name %></td>
+        <td><%= test_suite.username %></td>
+        <td><%= test_suite.interval %></td>
+        <td><%= link_to 'Edit', edit_test_suite_path(test_suite) %></td>
+        <td><%= link_to 'Results', test_suite_results_path(test_suite) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Test suite', new_test_suite_path %>

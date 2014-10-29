@@ -1,0 +1,45 @@
+<%= form_for(@test_suite) do |f| %>
+  <% if @test_suite.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@test_suite.errors.count, "error") %> prohibited this test_suite from being saved:</h2>
+
+      <ul>
+      <% @test_suite.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :base_url %><br>
+    <%= f.text_field :base_url %>
+  </div>
+  <div class="field">
+    <%= f.label :oauth_url %><br>
+    <%= f.text_field :oauth_url %>
+  </div>
+  <div class="field">
+    <%= f.label :client_id %><br>
+    <%= f.text_field :client_id %>
+  </div>
+  <div class="field">
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :interval %><br>
+    <%= f.number_field :interval %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

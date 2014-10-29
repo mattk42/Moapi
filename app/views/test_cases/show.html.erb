@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Endpoint:</strong>
+  <%= @test_case.endpoint %>
+</p>
+
+<p>
+  <strong>Method:</strong>
+  <%= @test_case.method %>
+</p>
+
+<p>
+  <strong>Params:</strong>
+  <%= @test_case.params %>
+</p>
+
+<p>
+  <strong>Timeout:</strong>
+  <%= @test_case.timeout %>
+</p>
+
+<%= link_to 'Edit', edit_test_suite_test_case_path(@test_suite,@test_case) %> |
+<%= link_to 'Assertions', test_suite_test_case_assertions_path(@test_suite,@test_case) %> |
+<%= link_to 'Results', test_suite_test_case_results_path(@test_suite,@test_case) %> |
+<%= link_to 'Back', test_suite_test_cases_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @test_suite_run.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @test_suite_run.end_time %>
+</p>
+
+<p>
+  <strong>Test suite:</strong>
+  <%= @test_suite_run.test_suite_id %>
+</p>
+
+<%= link_to 'Edit', edit_test_suite_test_suite_run_path(@test_suite,@test_suite_run) %> |
+<%= link_to 'Back', test_suite_test_suite_runs_path(@test_suite,@test_suite_run) %>

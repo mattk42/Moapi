@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Field:</strong>
+  <%= @assertion.field %>
+</p>
+
+<p>
+  <strong>Expected value:</strong>
+  <%= @assertion.expected_value %>
+</p>
+
+<%= link_to 'Edit', edit_test_suite_test_case_assertion_path(@test_suite,@test_case,@assertion) %> |
+<%= link_to 'Back', test_suite_test_case_assertions_path %>
